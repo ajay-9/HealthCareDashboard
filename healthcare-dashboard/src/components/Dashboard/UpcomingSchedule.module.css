@@ -1,0 +1,17 @@
+.schedule {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.dayGroup {
+  margin-top: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}

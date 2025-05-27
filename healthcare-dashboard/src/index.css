@@ -1,3 +1,4 @@
+/* GLOBAL ROOT VARIABLES */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,28 +14,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* BASIC RESET & GLOBAL DEFAULTS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #f8f9fd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
+/* TYPOGRAPHY */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* FORMS AND BUTTONS */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -42,27 +55,72 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input {
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* DARK MODE SUPPORT */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+    color: #000;
+  }
+}
+
+/* RESPONSIVE UTILITIES */
+.hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  body {
+    font-size: 15px;
   }
 }

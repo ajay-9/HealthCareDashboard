@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fd;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 0.85rem;
+  color: #666;
+}
