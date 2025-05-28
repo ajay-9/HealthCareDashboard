@@ -40,7 +40,7 @@
 }
 
 .searchBar {
-  width: 100%;
+  width: 95%;
   padding: 0.5rem 1rem 0.5rem 2.2rem; 
   border-radius: 0.5rem;
   border: 1px solid #ccc;
@@ -131,14 +131,18 @@
 
 
 @media (max-width: 480px) {
-   .headerLeft, .headerRight {
+  .headerLeft {
+    gap: 0;
+  }
+  .headerLeft, .headerRight {
     padding-top: 0.5rem;
   }
   .searchWrapper {
     padding: 0.25rem 0;
+    padding-left: 1.5rem;
   }
   .searchIcon {
-    left: 1rem;
+    left: 2.5rem;
   }
   .searchBar {
     font-size: 0.85rem;

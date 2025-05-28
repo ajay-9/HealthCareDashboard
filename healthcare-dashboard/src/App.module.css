@@ -11,8 +11,6 @@
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #dfe6f4;
-  
 }
 
 .header {
@@ -57,7 +55,6 @@
   }
 
   .mainContent {
-    height: 1rem;
     padding: 1rem;
     overflow-y: auto;
   }

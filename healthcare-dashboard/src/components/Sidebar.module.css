@@ -55,6 +55,11 @@
 
 @media (max-width: 768px) {
 
+  .sidebar {
+    height: 50vh;
+    padding:0;
+    padding-left: 1rem;
+  }
   .sidebarInner {
     padding: 1rem;
   }
@@ -65,11 +70,7 @@
 }
 
 @media (max-width: 480px) {
-  .sidebar {
-    height: 50vh;
-    padding:0;
-    padding-left: 1rem;
-  }
+ 
   .sidebarInner{
     gap: 1rem;
   }
