@@ -18,3 +18,13 @@
   color: #111827;
   font-weight: 600;
 }
+
+@media (max-width: 480px) {
+  .navBtn {
+    font-size: 0.7rem;
+  }
+  
+  .navBtnIcon {
+    font-size: 1rem;
+  }
+}

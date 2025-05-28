@@ -35,10 +35,10 @@
   padding-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sidebar {
     min-height: auto;
-    height: auto;
+    height: 100vh;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
@@ -46,6 +46,34 @@
   }
 
   .sidebarInner {
+    padding-left: 0.5rem;
+  }
+  .logo {
+  font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sidebarInner {
+    padding: 1rem;
+  }
+    .logo {
+  font-size: 1.5rem;
+  margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    height: 50vh;
+    padding:0;
     padding-left: 1rem;
+  }
+  .sidebarInner{
+    gap: 1rem;
+  }
+  .logo {
+  font-size: 1.4em;
   }
 }

@@ -19,3 +19,23 @@
   padding: 0;
   gap: 2rem;;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 0.9rem;
+  }
+  
+  .lists {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 0.8rem;
+  }
+  
+  .lists {
+    gap: 0.5rem;
+  }
+}
