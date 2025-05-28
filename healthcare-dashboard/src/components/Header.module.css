@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   background-color: #ffffff;
-   padding: 0;
+  padding: 0;
 }
 
 .headerLeft {
@@ -29,7 +29,6 @@
   padding: 1.5rem 1rem;
 }
 
-
 .searchIcon {
   position: absolute;
   top: 50%;
@@ -48,7 +47,6 @@
   color: #333;
   margin-left: 2rem;
 }
-
 
 .headerRight {
   display: flex;

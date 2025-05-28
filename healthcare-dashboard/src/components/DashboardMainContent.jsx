@@ -7,13 +7,13 @@ import UpcomingSchedule from './Dashboard/UpcomingSchedule';
 function DashboardMainContent() {
   return (
     <div className={styles.container}>
-      <div className={styles.topSection}>
+      <div className={styles.leftPanel}>
         <DashboardOverview />
-        <div className={styles.rightPanel}>
+      </div>
+      <div className={styles.rightPanel}>
           <CalendarView />
           <UpcomingSchedule />
         </div>
-      </div>
     </div>
   );
 }

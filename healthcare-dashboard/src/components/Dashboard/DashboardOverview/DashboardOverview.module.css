@@ -1,9 +1,8 @@
 .card {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  min-width: 0;
+  padding: 0 1.5rem;
+   width: 100%;
+  max-width: 100%;
+  min-width: 0;  
 }
 
 .header {
@@ -13,12 +12,43 @@
   margin-bottom: 1.5rem;
 }
 
+.header h2 {
+  font-size: 1.75rem;
+  color: #1c1c84;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header span {
+  font-size: 0.8rem;
+  color: #7b7c97;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dropdownIcon {
+  font-size: 0.6rem;
+  margin-left: 0.25rem;
+  color: #7b7c97;
+  vertical-align: middle;
+}
+
 .topRow {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  align-items: stretch;
+}
+
+.anatomyContainer {
+  max-height: 400px;
+  flex: 1;
+}
+
+.healthCards {
+  max-height: 400px;
+  flex: 1;
 }
 
 .bottomRow {

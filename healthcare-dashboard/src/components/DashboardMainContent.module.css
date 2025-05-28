@@ -1,19 +1,18 @@
 .container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.topSection {
+.leftPanel {
   display: flex;
+  flex:1;
   gap: 2rem;
   align-items: flex-start;
+  border: 2px solid red;
 }
 
 .rightPanel {
   display: flex;
-  flex-direction: column;
+   background-color: #f7faff;
   gap: 2rem;
   flex: 1;
 }
