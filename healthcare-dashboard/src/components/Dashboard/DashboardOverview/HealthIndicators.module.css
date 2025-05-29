@@ -1,0 +1,37 @@
+.indicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #65dcec;
+  padding: 0.5rem 0.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.topRight {
+  top: 30%;
+  left: 80%;
+  background-color: blue;
+  text-decoration-color: white;
+}
+
+.bottomLeft {
+  top: 70%;
+  left: 25%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.4rem;
+  color: #e63946;
+}
+
+.label {
+  font-weight: 500;
+  color: white;
+}

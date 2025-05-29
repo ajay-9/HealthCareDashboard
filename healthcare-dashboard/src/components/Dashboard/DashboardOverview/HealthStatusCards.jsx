@@ -1,17 +1,23 @@
 import styles from './HealthStatusCards.module.css';
-import { healthCards } from '../../../data/healthData';
+import { healthCards } from '../../../data/healthData.jsx';
+import HealthCard from './HealthCard';
+import { FaArrowRight } from 'react-icons/fa';
 
 function HealthStatusCards() {
+  console.log(healthCards);
+
   return (
     <div className={styles.cards}>
       {healthCards.map((card, index) => (
-        <div key={index} className={styles.card}>
-          <h4>{card.name}</h4>
-          <p>{card.date}</p>
-          <span className={`${styles.status} ${styles[card.status]}`}>{card.status}</span>
-        </div>
+        <HealthCard
+          key={index}
+          name={card.name}
+          date={card.date}
+          status={card.status}
+          icon={card.icon}
+        />
       ))}
-      <div>Details</div>
+      <div className={styles.details}>Details <FaArrowRight className={styles.arrow}/></div>
     </div>
   );
 }

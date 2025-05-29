@@ -35,7 +35,7 @@
 .topRow {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  /* gap: 2rem; */
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
   align-items: stretch;

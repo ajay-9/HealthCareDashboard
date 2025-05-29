@@ -1,0 +1,81 @@
+.card {
+  background-color: #f7faff;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  width: 10rem;                      /* reduced width */
+  max-height: 8rem;                 /* optional height limit */
+  overflow: hidden;                  /* prevent overflow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  transition: transform 0.2s ease;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.statusBarWrapper {
+  width: 100%;
+  background-color: #e5e7eb;
+  height: 6px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 0.75rem;
+  transition: width 0.3s;
+}
+
+.green {
+  width: 80%;
+  background-color: #10b981;
+}
+
+.red {
+  width: 80%;
+  background-color: #ef4444;
+}
+
+.critical {
+  width: 80%;
+  background-color: #f43f5e;
+}
+
+/* ✅ Responsive behavior */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+}
