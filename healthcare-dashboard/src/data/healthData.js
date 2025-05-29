@@ -1,10 +1,12 @@
+import {FaHeart, FaBone} from 'react-icons/fa';
+
 export const anatomyData = [
-  { label: "Healthy Heart", statusIcon: "❤️", position: "topLeft" },
-  { label: "Bone Warning", statusIcon: "🦴", position: "bottomRight" },
+  { label: "Healthy Heart", statusIcon: <FaHeart />, position: "topRight" },
+  { label: "Healthy Leg", statusIcon: <FaBone />, position: "bottomLeft" },
 ];
 
 export const healthCards = [
-  { name: "Lungs", date: "Oct 10", status: "healthy" },
-  { name: "Teeth", date: "Oct 12", status: "warning" },
-  { name: "Bone", date: "Oct 15", status: "critical" },
+  { name: "Lungs", date: "10 Oct 2021", status: "green" },
+  { name: "Teeth", date: "10 Oct 2021", status: "red" },
+  { name: "Bone", date: "10 Oct 2021", status: "critical" }, 
 ];

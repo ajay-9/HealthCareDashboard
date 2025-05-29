@@ -3,6 +3,12 @@
   width: 300px;
   max-height: 400px; 
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7faff;
+  padding: 1rem 0;
+  margin-left: 2rem;
+
 }
 
 .bodyImage {
@@ -10,6 +16,9 @@
   width: auto;
   height: auto;
   object-fit: contain;
+  border-radius: 1rem;
+  background-color: #f7faff;
+
 }
 
 .indicator {
