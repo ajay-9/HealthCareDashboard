@@ -1,16 +1,15 @@
 .card {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #f8f9fd;
-  padding: 1rem;
-  border-radius: 12px;
-  width: 200px;
+  background-color: #d8dcfc;
+  padding: 0.75rem 1rem;
+  border-radius: 1.5rem;
+  width: 260px; /* Increased from 240px */
+  min-height: 70px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-}
-
-.icon {
-  font-size: 1.5rem;
-  margin-right: 1rem;
+  color: #1c1c84;
+  flex-shrink: 0;
 }
 
 .info {
@@ -19,11 +18,22 @@
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  margin: 0;
+  white-space: normal;       /* ⬅️ Allow full wrapping */
+  overflow: visible;         /* ⬅️ No hidden overflow */
+  text-overflow: unset;      /* ⬅️ No ellipsis */
 }
 
 .time {
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: #1c1c84;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  flex-shrink: 0;
 }

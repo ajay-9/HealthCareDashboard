@@ -1,20 +1,18 @@
 import styles from './ActivityFeed.module.css';
 
 function ActivityFeed() {
-  const data = [2, 4, 3, 6, 1, 3, 5];
-
   return (
     <div className={styles.container}>
-      <h4>Activity</h4>
-      <p>3 appointments this week</p>
+      <div className={styles.headerRow}>
+        <h4>Activity</h4>
+        <span>3 appointments on this week</span>
+      </div>
+
       <div className={styles.chart}>
-        {data.map((value, idx) => (
-          <div key={idx} className={styles.barGroup}>
-            <div
-              className={styles.bar}
-              style={{ height: `${value * 10 + 20}px` }}
-            ></div>
-            <span className={styles.dayLabel}>D{idx + 1}</span>
+        {['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'].map((day, index) => (
+          <div key={index} className={styles.dayColumn}>
+            <div className={styles.bar}></div>
+            <span className={styles.dayLabel}>{day}</span>
           </div>
         ))}
       </div>

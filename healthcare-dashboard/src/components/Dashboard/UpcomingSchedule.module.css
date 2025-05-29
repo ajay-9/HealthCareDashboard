@@ -1,12 +1,22 @@
 .schedule {
-  background-color: #fff;
+  background-color: #f6f9ff;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
 }
 
-.dayGroup {
+.schedule h3 {
+  font-size: 1.25rem;
+  color: #1c1c84;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dayGroup h4 {
   margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
 }
 
 .cards {
